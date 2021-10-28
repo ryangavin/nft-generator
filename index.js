@@ -1,7 +1,10 @@
 import Prando from 'prando';
+import YAML from 'yaml';
+import fs from 'fs';
 
 const generate = () => {
-    console.log("Hello world");
+    const traitDataRaw = fs.readFileSync('traits.yml.example', 'utf8');
+    const traitData = YAML.parse(traitDataRaw);
 };
 
 generate();

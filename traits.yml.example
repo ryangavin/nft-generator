@@ -1,0 +1,13 @@
+traits:
+  trait1:
+    values:
+      blue: 4
+      red: 4
+      green: 8
+  trait2:
+    values:
+      big: 4
+      small: 4
+      gigantic: 8
+
+
