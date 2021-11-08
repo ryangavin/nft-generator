@@ -6,11 +6,14 @@
   "main": "traits.js",
   "scripts": {
     "traits:generate": "node traits.js",
+    "images:generate": "node images.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas": "^2.8.0",
+    "merge-images": "^2.0.0",
     "prando": "^6.0.1",
     "yaml": "^1.10.2"
   }
