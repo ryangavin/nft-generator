@@ -3,17 +3,16 @@ import Canvas from 'canvas';
 import fs from 'fs';
 
 
+/**
+ * TODO what are the shapes of these things
+ * traits shape defined in traits.js
+ * images needs to group by trait name or something
+ */
 const generate = (traits, images) => {
     for (const generation in traits) {
-        mergeImages([''], {
-            Canvas: Canvas.Canvas,
-            Image: Canvas.Image
-        }).then(b64 => {
-            console.log(b64);
-        });
+        const imagesToMerge = [];
     }
 };
-
 
 const merge = async (images) => {
     const b64 = await mergeImages(images, {
