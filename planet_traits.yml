@@ -1,0 +1,61 @@
+canvas: _0001_BG.png
+traits:
+  background:
+    black:
+      image: /todo/todo
+      weight: 1
+    pink:
+      image: /todo/todo
+      weight: 1
+    purple:
+      image: /todo/todo
+      weight: 1
+    blue:
+      image: /todo/todo
+      weight: 1
+    green:
+      image: /todo/todo
+      weight: 1
+    yellow:
+      image: /todo/todo
+      weight: 1
+    red:
+      image: /todo/todo
+      weight: 1
+
+  background_extra:
+    stars:
+      image: /todo
+      weight: 1
+    none:
+      image: null
+      weight: 4
+
+  planet:
+    green:
+      image: /todo/todo
+      weight: 1
+    red:
+      image: /todo/todo
+      weight: 1
+    purple:
+      image: /todo/todo
+      weight: 1
+    yellow:
+      image: /todo/todo
+      weight: 1
+    pink:
+      image: /todo/todo
+      weight: 1
+    blue:
+      image: /todo/todo
+      weight: 1
+
+  planet_extra:
+    cirlce:
+      image: /todo
+      weight: 2
+    stripes:
+      image: /todo
+      weight: 1
+
