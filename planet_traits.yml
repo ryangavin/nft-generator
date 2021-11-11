@@ -2,60 +2,63 @@ canvas: _0001_BG.png
 traits:
   background:
     black:
-      image: /todo/todo
+      image: BACKGROUND/_0002s_0000_BLACK.png
       weight: 1
     pink:
-      image: /todo/todo
+      image: BACKGROUND/_0002s_0001_PINK.png
       weight: 1
     purple:
-      image: /todo/todo
+      image: BACKGROUND/_0002s_0002_PURPLE.png
       weight: 1
     blue:
-      image: /todo/todo
+      image: BACKGROUND/_0002s_0003_BLUE.png
       weight: 1
     green:
-      image: /todo/todo
+      image: BACKGROUND/_0002s_0004_GREEN.png
       weight: 1
     yellow:
-      image: /todo/todo
+      image: BACKGROUND/_0002s_0005_YELLOW.png
       weight: 1
     red:
-      image: /todo/todo
+      image: BACKGROUND/_0002s_0006_RED.png
       weight: 1
 
   background_extra:
-    stars:
-      image: /todo
-      weight: 1
     none:
       image: null
       weight: 4
+    stars:
+      image: BACKGROUND_EXTRAS/_0000_STARS.png
+      weight: 1
 
   planet:
     green:
-      image: /todo/todo
+      image: PLANET/_0001s_0000_GREEN.png
       weight: 1
     red:
-      image: /todo/todo
+      image: PLANET/_0001s_0001_RED.png
       weight: 1
     purple:
-      image: /todo/todo
+      image: PLANET/_0001s_0002_PURPLE.png
       weight: 1
     yellow:
-      image: /todo/todo
+      image: PLANET/_0001s_0003_YELLOW.png
       weight: 1
     pink:
-      image: /todo/todo
+      image: PLANET/_0001s_0004_PINK.png
       weight: 1
     blue:
-      image: /todo/todo
+      image: PLANET/_0001s_0005_BLUE.png
       weight: 1
 
   planet_extra:
-    cirlce:
-      image: /todo
-      weight: 2
+    none:
+      image: nil
+      weight: 4
     stripes:
-      image: /todo
+      image: PLANET_EXTRA/_0000s_0000_STRIPES.png
       weight: 1
+    cirlce:
+      image: PLANET_EXTRA/_0000s_0001_CIRLCE.png
+      weight: 2
 
