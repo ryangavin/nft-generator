@@ -28,7 +28,7 @@ traits:
       image: null
       weight: 4
     stars:
-      image: BACKGROUND_EXTRAS/_0000_STARS.png
+      image: BACKGROUND_EXTRA/_0000_STARS.png
       weight: 1
 
   planet:
