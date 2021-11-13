@@ -13,11 +13,13 @@ const rand = new Prando(42);
  *          "values": {
  *              "value1": {
  *                  "low": 0,
- *                  "high": 4
+ *                  "high": 4,
+ *                  "image": "/path/to.png"
  *              },
  *              "value2": {
  *                  "low": 4,
- *                  "high": 12
+ *                  "high": 12,
+ *                  "image": "/path/to.png"
  *              }
  *          }
  *      }
@@ -27,29 +29,29 @@ const rand = new Prando(42);
 const transformTraits = (rawTraitData) => {
     const data = {};
 
-    for (const trait in rawTraitData) {
-        const traits = rawTraitData[trait]['values'];
+    for (const traitName in rawTraitData) {
         const traitData = {
             values: {}
         };
 
         // Compute roll offsets for every value in the trait
         let offset = 0;
-        for (const value in traits) {
-            const weight = traits[value];
+        for (const traitValue in rawTraitData[traitName]) {
+            const {weight, image} = rawTraitData[traitName][traitValue];
             const valueData = {
                 low: offset,
                 high: offset+weight,
+                image
             }
             offset += weight;
-            traitData.values[value] = valueData;
+            traitData.values[traitValue] = valueData;
         }
 
         // The offset is currently the largest value, thus the maximum roll
         traitData.maxRoll = offset;
 
         // Finally set the trait data on the parent object
-        data[trait] = traitData;
+        data[traitName] = traitData;
     }
 
     return data;
@@ -76,8 +78,8 @@ const selectTraits = (traitTable) => {
     return selectedTraits;
 }
 
-const generate = () => {
-    const traitDataRaw = fs.readFileSync('traits.yml.example', 'utf8');
+const generate = (filename) => {
+    const traitDataRaw = fs.readFileSync(filename, 'utf8');
     const traitData = YAML.parse(traitDataRaw)['traits'];
     const traitTable = transformTraits(traitData);
 
@@ -86,4 +88,4 @@ const generate = () => {
     }
 };
 
-generate();
+generate('planet_traits.yml');
